@@ -1,0 +1,18 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: mlservice-scaler
+  namespace: default
+spec:
+  scaleTargetRef:
+    name: mlservice
+  minReplicaCount: 1
+  maxReplicaCount: 5
+  cooldownPeriod: 10           # seconds after last scale event
+  pollingInterval: 5           # seconds
+  triggers:
+  - type: rabbitmq
+    metadata:
+      host: "amqp://guest:guest@rabbitmq:5672/"
+      queueName: tasks
+      queueLength: "5"          # scale if >5 messages
