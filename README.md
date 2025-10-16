@@ -1,4 +1,4 @@
-# AIALERT
+# PulseOps
 
 **AIALERT** is a fully containerized DevOps and Observability Proof-of-Concept (POC) project. It demonstrates a scalable, event-driven architecture with monitoring, logging, and auto-scaling capabilities. **No AI/ML is used** — the “ML service” here is a placeholder for any microservice that processes tasks from a queue.  
 
@@ -73,7 +73,7 @@
 ## 📁 Project Structure
 
 ```
-AIALERT/
+PulseOps/
 ├── KEYS/                  # Optional secrets or certificates
 ├── docker-compose.yml      # Docker Compose orchestration
 ├── get-docker.sh           # Script to install Docker
@@ -139,11 +139,17 @@ kubectl apply -f k8s/
 ---
 
 ## 📈 Screenshots / Dashboards
+-Keda Auto Scaling
+
+![WhatsApp Image 2025-10-16 at 15 45 21_20ebbbe4](https://github.com/user-attachments/assets/8a0b4713-f111-4297-bece-ed8af97d210f)
 
 - Grafana metrics dashboards
+
+ <img width="1365" height="559" alt="image" src="https://github.com/user-attachments/assets/5c439571-a82a-48a9-807d-e9ff678ef81e" />
+
 - Logs aggregated in Loki
 
-*(Add screenshots here if desired)*
+<img width="778" height="584" alt="image" src="https://github.com/user-attachments/assets/7513cc01-105e-4073-b2d6-9c1128bdd298" />
 
 ---
 
