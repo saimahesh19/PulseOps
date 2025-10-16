@@ -91,8 +91,8 @@ PulseOps/
 ### **1. Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/AIALERT.git
-cd AIALERT
+git clone https://github.com/saimahesh19/PulseOps.git
+cd pulseOps
 ```
 
 ### **2. Start using Docker Compose**
